@@ -1,12 +1,12 @@
 import React from "react";
 
 const CardContact = (props) => {
-  const { id, name, email } = props.contact;
+  const { name, email } = props.contact;
   return (
     <div className="item">
       <div className="content">
-        <div className="header">{contact.name}</div>
-        <div>{contact.email}</div>
+        <div className="header">{name}</div>
+        <div>{email}</div>
       </div>
       <i
         className="trash alternate outline icon"
@@ -15,4 +15,13 @@ const CardContact = (props) => {
     </div>
   );
 };
+
+// Set a default value for the contact prop
+CardContact.defaultProps = {
+  contact: {
+    name: "Aditya ",
+    email: "adityasrj@engineer.com",
+  },
+};
+
 export default CardContact;
