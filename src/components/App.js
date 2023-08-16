@@ -12,8 +12,8 @@ function App() {
     },
     {
       id: "2",
-      name: "Phil Ryan",
-      email: "philryan@gmail.com",
+      name: "Phil",
+      email: "phil@gmail.com",
     },
   ];
   return (
